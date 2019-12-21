@@ -4,6 +4,11 @@ __NOTE: Very experimental at the moment.__
 
 winfetch is an attempt to create a packagable tool that installs from Microsoft store and makes it easy to fetch URLs from the web.
 
+### Build Status
+| Build Status                       | Platform                                 |
+| :--------------------------------: | :--------------------------------------: |
+| [![Build Status](https://dev.azure.com/jarjoura0634/winfetch/_apis/build/status/winfetch.winfetch?branchName=master)](https://dev.azure.com/jarjoura0634/winfetch/_build/latest?definitionId=1&branchName=master)       | Visual Studio 2019                       |
+
 ## Usage
 If you install the package, it should be available to the logged in user system wide.
 
