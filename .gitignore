@@ -1,0 +1,22 @@
+# winfetch default ignore
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+.vs/
+packages/
+
+bin/
+obj/
+
+# This shouldn't be included in the public repo
+Package.StoreAssociation.xml
+
+
+x64/
+
