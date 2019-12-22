@@ -13,7 +13,7 @@
   <Identity
     Name="BarkingLoudlyLLC.winfetch"
     Publisher="CN=F3160666-0E65-4105-BDD7-77EA11B01FE9"
-    Version="1.0.0.0" />
+    Version="1.0.3.0" />
 
   <Properties>
     <DisplayName>winfetch</DisplayName>
