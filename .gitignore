@@ -16,7 +16,9 @@ obj/
 
 # This shouldn't be included in the public repo
 Package.StoreAssociation.xml
+AppPackages/
+BundleArtifacts/
 
-
+ARM64/
 x64/
 
