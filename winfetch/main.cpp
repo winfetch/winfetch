@@ -18,6 +18,7 @@ std::string GetAppPackageDetails()
   return fmt::format("winfetch: {}.{}.{}.{}", version.Major, version.Minor, version.Revision, version.Build);
 }
 
+
 IAsyncAction HandleURLFetch(Uri uri)
 {
   HttpBaseProtocolFilter filter;
