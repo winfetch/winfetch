@@ -1,6 +1,7 @@
 ﻿#include "pch.h"
 
 #include <filesystem>
+#include <optional>
 
 using namespace winrt;
 using namespace Windows::ApplicationModel;
@@ -49,22 +50,17 @@ int main(int argc, char* argv[])
 {
   init_apartment();
 
-  CLI::App app(GetAppPackageDetails());
+  auto parser = argumentum::argument_parser{};
+  parser.config().program("winfetch.exe").description(fmt::format("{}", GetAppPackageDetails()));
 
-  // XXX: By default, the app name will have the AppData folder, something the normal user
-  // won't care about. Let's just make sure we're showing the name they would type in.
-  app.name("winfetch.exe");
-  app.prefix_command();
+  std::optional<std::string> url;
+  parser.add_argument(url, "-s").maxargs(1);
 
-  std::string url;
-  CLI::Option* opt = app.add_option("url", url, "URL");
-  opt->required(true);
-
-  
-  CLI11_PARSE(app, argc, argv);
+  if (!parser.parse_args(argc, argv, 1))
+    return 1;
 
   try {
-    auto fetchUri = Uri(to_hstring(url));
+    auto fetchUri = Uri(to_hstring(*url));
     HandleURLFetch(fetchUri).get();
   }
   catch (hresult_error const& e) {

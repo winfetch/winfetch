@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#define NOMINMAX
+
 #include <sdkddkver.h>
 #include <Windows.h>
 #include <Unknwn.h>
@@ -12,6 +14,6 @@
 #include <winrt/Windows.Web.Http.Filters.h>
 #include <winrt/Windows.Web.Http.Headers.h>
 
-#include <CLI/CLI.hpp>
+#include <argumentum/argparse.h>
 #include <pbar.h>
 #include <fmt/format.h>
