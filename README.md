@@ -7,7 +7,7 @@ winfetch is an attempt to create a packagable tool that installs from Microsoft 
 ### Build Status
 | Build Status                       | Platform                                 |
 | :--------------------------------: | :--------------------------------------: |
-| [![Build Status](https://dev.azure.com/jarjoura0634/winfetch/_apis/build/status/winfetch.winfetch?branchName=master)](https://dev.azure.com/jarjoura0634/winfetch/_build/latest?definitionId=1&branchName=master)       | Visual Studio 2019                       |
+| [![Build Status](https://dev.azure.com/winfetch/winfetch/_apis/build/status/winfetch.winfetch?branchName=master)](https://dev.azure.com/winfetch/winfetch/_build/latest?definitionId=1&branchName=master)       | Visual Studio 2019                       |
 
 ## Usage
 If you install the package, it should be available to the logged in user system wide.
